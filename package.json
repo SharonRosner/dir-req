@@ -1,0 +1,14 @@
+{
+  "name": "dir-req",
+  "version": "1.0.0",
+  "description": "Bulk require from a specified directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Sharon Rosner",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
