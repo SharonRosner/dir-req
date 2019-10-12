@@ -16,7 +16,7 @@ function requireFromFileName(fileName, path, callback) {
     ../ - another one to exit node_modules directory
     */
     const requestExportedModule = require(`../../${path}/${fileNameNoExt}`);
-    if(callback!==undefined) callback(requestExportedModule);
+    if(callback!==undefined) callback(requestExportedModule, fileNameNoExt);
   }
 }
 
