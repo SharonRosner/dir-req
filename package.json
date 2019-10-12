@@ -1,7 +1,7 @@
 {
-  "name": "dir-req",
+  "name": "dynareq",
   "version": "1.0.0",
-  "description": "Bulk require from a specified directory",
+  "description": "Bulk dynamic require from a specified directory",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

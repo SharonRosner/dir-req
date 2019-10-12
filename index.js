@@ -1,5 +1,5 @@
 /*!
- * dir-req
+ * dynareq
  * Copyright(c) 2019 Sharon Rosner
  * ISC Licensed
  */

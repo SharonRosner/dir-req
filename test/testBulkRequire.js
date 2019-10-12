@@ -1,30 +1,30 @@
 var assert = require('assert');
 
-describe('Loading module: dir-req', function() {
+describe('Loading module: dynareq', function() {
     before(function() {
         const fs = require('fs');
-        const dirReqModuleDir = 'node_modules/dir-req';
+        const dirReqModuleDir = 'node_modules/dynareq';
         if (!fs.existsSync(dirReqModuleDir)){
           fs.mkdirSync(dirReqModuleDir);
         }
         fs.copyFileSync('index.js',`${dirReqModuleDir}/index.js`);
         fs.copyFileSync('package.json',`${dirReqModuleDir}/package.json`);
-        dirReq = require('dir-req');
+        dynaReq = require('dynareq');
         
       });
-    describe('Testing module dir-req', function() {
+    describe('Testing module dynareq', function() {
         it('Should be loaded', function() {
             
-            assert.notEqual(dirReq, undefined);
+            assert.notEqual(dynaReq, undefined);
         });
 
         it('Can bulk require', function() {
-            assert.notEqual(dirReq.bulkRequire, undefined);
+            assert.notEqual(dynaReq.bulkRequire, undefined);
           });
 
         it('Bulk require should load 3 modules', function() {
             let numOfLoadedmModules=0;
-            dirReq.bulkRequire('bulkPathForTest', (loadedModule)=>{
+            dynaReq.bulkRequire('bulkPathForTest', (loadedModule)=>{
                 console.log(loadedModule);
                 numOfLoadedmModules++;
 
